@@ -30,3 +30,8 @@ table tr:nth-child(odd) {
 table tr:nth-child(1) {
     background-color: #00c4c7;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
