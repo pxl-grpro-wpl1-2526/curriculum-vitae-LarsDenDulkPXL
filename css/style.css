@@ -32,6 +32,9 @@ table tr:nth-child(1) {
 }
 
 footer {
+    /* position: sticky; */
+    /* bottom: 0; */
+    /* background-color: #00c4c7; */
     display: flex;
     justify-content: space-between;
 }
