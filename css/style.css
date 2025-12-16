@@ -53,9 +53,20 @@ table tr:nth-child(1) {
 }
 
 footer {
-    /* position: sticky; */
-    /* bottom: 0; */
-    /* background-color: #00c4c7; */
+    padding: 0 5px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    max-width: 750px;
+    border-radius: 10px;
+    position: sticky;
+    bottom: 5px;
+    background-color: rgb(96, 176, 251);
     display: flex;
     justify-content: space-between;
+    z-index: 2;
+    box-shadow: 0 0 3px black;
+}
+
+a {
+    color: #001540;
 }
