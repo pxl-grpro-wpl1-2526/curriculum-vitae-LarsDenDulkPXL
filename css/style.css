@@ -1,6 +1,14 @@
 * {
     border-collapse: collapse;
     box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    background-image: url("../images/Free_Tech_Background.png");
+    background-color: #000000;
+    background-size: cover;
+    color: white;
 }
 
 header img {
@@ -10,6 +18,19 @@ header img {
 }
 header img:hover {
     box-shadow: 0 0 10px black;
+}
+main {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(96, 176, 251);
+    box-shadow: 0 0 25px black;
+    z-index: 1;
+}
+
+h1, h2, h3, h4 {
+    color: #001540;
+    text-transform: uppercase;
 }
 
 table{
