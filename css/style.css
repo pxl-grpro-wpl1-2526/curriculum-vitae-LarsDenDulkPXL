@@ -8,7 +8,6 @@
 
 body {
     background-image: url("../images/Free_Tech_Background.png");
-    background-color: #000000;
     background-size: cover;
     color: white;
 }
@@ -17,11 +16,14 @@ a {
     color: #001540;
 }
 
+/* HEADER */
 header{
-    background-color: rgb(96, 176, 251);
+    background-color: #527ED9;
+    position: relative;
     display: flex;
     margin-bottom: 15xp;
     z-index: 2;
+    box-shadow: 0 0 50px #001540;
 }
 header img {
     height: 300px;
@@ -30,8 +32,11 @@ header img {
     margin: 5px;
     border: 2px solid #001540;
 }
-header div {
+header > div {
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 header div h1 {
     margin-top: 5px;
@@ -40,32 +45,49 @@ header div h1 {
 header img:hover {
     box-shadow: 0 0 10px black;
 }
-nav {
-    display: flex;
-    gap: 30px;
+
+header fieldset {
+    margin: 5px;
+    border: 2px solid #001540;
+    padding: 5px;
+    border-radius: 5px;
 }
+header legend {
+    margin-left: 15px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
 nav a {
     color: white;
 }
-ul {
+nav a:hover {
+    color: #527ED9;
+}
+nav ul {
     list-style-position: inside;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
-ul ul {
-    padding-left: 35px;
+nav li {
+    background-color: #001540;
+    border-radius: 5px;
+    padding: 5px;
 }
-ul li {
-    padding-bottom: 5px;
+nav li:hover {
+    box-shadow: 0 0 5px #001540;
 }
-li::marker {
-    color: #001540;
-}
+/* HEADER */
 
-
+/* GENERAL */
 main {
     width: 80%;
     margin: auto;
     padding: 15px;
-    background-color: rgb(96, 176, 251);
+    background-color: #527ED9;
     box-shadow: 0 0 25px black;
     z-index: 1;
 }
@@ -77,7 +99,77 @@ h1, h2, h3, h4 {
     color: #001540;
     text-transform: uppercase;
 }
+h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h5 {
+    color: #001540;
+    font-size: 16px;
+}
+p {
+    margin-bottom: 5px;
+}
+/* GENERAL */
 
+/* OVER MIJ */
+#overmij h3 {
+    margin-top: 0px;
+}
+/* OVER MIJ */
+
+/* VAARDIGHEDEN + KENNISSEN */
+#veerdighedenEnKennis {
+    display: flex;
+}
+/* VAARDIGHEDEN */
+#vaardigheden {
+    width: 50%;
+}
+#vaardigheden ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
+}
+#vaardigheden li {
+    background-color: #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+#vaardigheden li:hover {
+    box-shadow: 0 0 10px #001540;
+}
+/* VAARDIGHEDEN */
+
+/* KENNISSEN */
+#kennis {
+    width: 50%;
+    text-align: right;
+}
+#kennis ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 5px;
+    list-style: none;
+}
+#kennis li {
+    background-color: #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+#kennis li:hover {
+    box-shadow: 0 0 10px #001540;
+}
+/* KENNISSEN */
+/* VAARDIGHEDEN + KENNISSEN */
+
+/* TALENKENNIS */
 table{
     border: 2px solid black;
 }
@@ -86,17 +178,96 @@ td, th {
     text-align: left;
     padding: 5px;
 }
-/* KLeuren zijn nog tijdelijk, heb nog niet besloten aan een kleurenpallet */
 table tr:nth-child(even) {
-    background-color: #9de3fd;
+    background-color: #2EA5E3;
 }
 table tr:nth-child(odd) {
-    background-color: #6bd7ff;
+    background-color: #527ED9;
 }
 table tr:nth-child(1) {
-    background-color: #00c4c7;
+    background-color: #001540;
 }
+table tr:hover {
+    background-color: #001540;
+}
+/* TALENKENNIS */
 
+/* WERKERVARINGEN */
+#werkervaring h5 {
+    margin-bottom: 5px;
+}
+#werkervaring ul {
+    margin-bottom: 20px;
+}
+#werkervaring fieldset {
+    border: 5px solid #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+#werkervaring legend {
+    margin-left: 15px;
+    color: #001540;
+    font-weight: bold;
+    padding: 0 5px;
+}
+.lijstWerkervaringen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    list-style-type: none;
+}
+.lijstWerkervaringen > div {
+    /* border: 2px solid #001540; */ /* Is optioneel */
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 500px;
+}
+.lijstWerkervaringen > div:hover {
+    box-shadow: 0 0 10px #001540;
+}
+.periode {
+    text-align: right;
+    position: relative;
+    right: 0px;
+}
+.taken {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 5px;
+}
+.taken li {
+    border-radius: 5px;
+    background-color: #001540;
+    padding: 5px;
+}
+.taken li:hover {
+    box-shadow: 0 0 10px #001540;
+}
+/* WERKERVARINGEN */
+
+/* HOBBY */
+#hobby ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 5px;
+}
+#hobby li {
+    background-color: #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+#hobby li:hover {
+    box-shadow: 0 0 10px #001540;
+}
+/* HOBBY */
+
+/* FOOTER */
 footer {
     padding: 5px 15px;
     margin: 0 auto;
@@ -105,9 +276,14 @@ footer {
     border-radius: 10px;
     position: sticky;
     bottom: 5px;
-    background-color: rgb(96, 176, 251);
+    background-color: #527ED9;
     display: flex;
     justify-content: space-between;
     z-index: 2;
     box-shadow: 0 0 3px black;
 }
+footer a:hover {
+    /* color: #2EA5E3; */
+    color: white;
+}
+/* FOOTER */

@@ -18,24 +18,22 @@
                 <h2>Curriculum Vitae</h2>
                 <h1>Lars den Dulk</h1>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#overmij">Over mij</a></li>
-                    <li><a href="#diploma">Diploma's</a></li>
-                    <li><a href="#opleidingen">Opleidingen</a></li>
-                    <li><a href="#vaardigheden">Vaardigheden</a></li>
-                    <li><a href="#kennis">Kennissen</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#talenkennis">Talenkennis</a></li>
-                    <li><a href="#werkervaring">Werkervaring</a></li>
+            <fieldset>
+                <legend>Inhoud</legend>
+                <nav>
                     <ul>
+                        <li><a href="#overmij">Over mij</a></li>
+                        <li><a href="#diploma">Diploma's</a></li>
+                        <li><a href="#opleidingen">Opleidingen</a></li>
+                        <li><a href="#vaardigheden">Vaardigheden</a></li>
+                        <li><a href="#kennis">Kennissen</a></li>
+                        <li><a href="#talenkennis">Talenkennis</a></li>
                         <li><a href="#stage">Stage</a></li>
-                        <li><a href="#jobstudent">Jobstudent</a></li>
+                        <li><a href="#studentenjob">Studentenjob</a></li>
+                        <li><a href="#hobby">Hobby's</a></li>
                     </ul>
-                    <li><a href="#hobby">Hobby's</a></li>
-                </ul>
-            </nav>
+                </nav>
+            </fieldset>
         </div>
     </header>
     <main>
@@ -48,6 +46,7 @@
 
         <article id="diploma">
             <h3>Diploma's</h3>
+            <p>Lorem ipsum dolor, sit amet</p>
         </article>
         <article id="opleidingen">
             <h3>Opleidingen</h3>
@@ -62,27 +61,30 @@
                     Sint-Elisabeth campus OV4 Overpelt.</p>
             </div>
         </article>
-        <article id="vaardigheden">
-            <h3>Vaardigheden</h3>
-            <p>Ik heb de volgende vaardigheden:</p>
-            <ul>
-                <li>Flexibel</li>
-                <li>Respectvol</li>
-                <li>Geduldig</li>
-                <li>Positief ingesteld</li>
-                <li>Beleefd</li>
-                <li>Creatief</li>
-            </ul>
-        </article>
-        <article id="kennis">
-            <h3>kennissen</h3>
-            <p>Ik heb de volgende kenissen:</p>
-            <ul>
-                <li>Office 365 pakket (word, excel, outlook ...)</li>
-                <li>C#</li>
-                <li>HTML/CSS</li>
-                <li>SQL</li>
-            </ul>
+        <article id="veerdighedenEnKennis">
+            <article id="vaardigheden">
+                <h3>Vaardigheden</h3>
+                <p>Ik heb de volgende vaardigheden:</p>
+                <ul>
+                    <li>Flexibel</li>
+                    <li>Respectvol</li>
+                    <li>Geduldig</li>
+                    <li>Positief ingesteld</li>
+                    <li>Beleefd</li>
+                    <li>Creatief</li>
+                </ul>
+            </article>
+            <article id="kennis">
+                <h3>kennissen</h3>
+                <p>Ik heb de volgende kenissen:</p>
+                <ul>
+                    <li>Office 365 pakket</li>
+                    <li>C#</li>
+                    <li>HTML/CSS</li>
+                    <li>SQL</li>
+                    <li>Roblox Studio</li>
+                </ul>
+            </article>
         </article>
         <article id="talenkennis">
             <h3>Talenkennis</h3>
@@ -116,16 +118,20 @@
         <article id="werkervaring">
             <h3>Werkervaring</h3>
             <p>In het verleden heb ik de volgende werkervaringen gehad:</p>
-            <section id="stage">
-                <h4>Stage</h4>
-                <ul>
-                    <li>
+            <fieldset id="stage">
+                <legend>Stage</legend>
+                <div class="lijstWerkervaringen">
+                    <div>
                         <div>
                             <h5>Huis van het Kind</h5>
                             <p>Onthaal medewerker</p>
-                            <p>Periode: 03/10/2024 - 19/06/2025</p>
+                        </div>
+                        <div class="periode">
+                            <p>03/10/2024 - 19/06/2025</p>
+                        </div>
+                        <div>
                             <P>Taken:</P>
-                            <ul>
+                            <ul class="taken">
                                 <li>Assisteren van klanten</li>
                                 <li>Boeken terugzetten in de jeugdbib</li>
                                 <li>Ontwerpen maken voor Facebook</li>
@@ -133,68 +139,84 @@
                                 <li>Interne documenten aanvullen</li>
                             </ul>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <div>
                             <h5>Kruidvat</h5>
                             <p>Verkoopmedewerker</p>
-                            <p>Periode: 12/01/2024 - 13/06/2024</p>
+                        </div>
+                        <div class="periode">
+                            <p>12/01/2024 - 13/06/2024</p>
+                        </div>
+                        <div>
                             <P>Taken:</P>
-                            <ul>
+                            <ul class="taken">
                                 <li>Assisteren van klanten</li>
                                 <li>Rekken aanvullen</li>
                                 <li>Producten beveiligen</li>
                                 <li>Kassa bedienen</li>
                             </ul>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <div>
                             <h5>VIP Computers BVBA</h5>
                             <p>Verkoopmedewerker en techniese dienst</p>
-                            <p>Periode: 21/09/2023 - 14/12/2023</p>
+                        </div>
+                        <div class="periode">
+                            <p>21/09/2023 - 14/12/2023</p>
+                        </div>
+                        <div>
                             <P>Taken:</P>
-                            <ul>
+                            <ul class="taken">
                                 <li>Rekken aanvullen</li>
                                 <li>Niewe laptops instelen.</li>
-                                <li>Problemen bij laptops, pc's en printers zoeken en oplossen</li>
+                                <li>It problemen bij toestellen zoeken en oplossen</li>
                             </ul>
                         </div>
-                    </li>
-                </ul>
-            </section>
-            <section id="jobstudent">
-                <h4>Jobstudent</h4>
-                <ul>
-                    <li>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset id="studentenjob">
+                <legend>studentenjob</legend>
+                <div class="lijstWerkervaringen">
+                    <div>
                         <div>
                             <h5>Kruidvat</h5>
                             <p>Verkoopmedewerker</p>
-                            <p>Periode: 02/07/2024 - 27/07/2024</p>
+                        </div>
+                        <div class="periode">
+                            <p>02/07/2024 - 27/07/2024</p>
+                        </div>
+                        <div>
                             <P>Taken:</P>
-                            <ul>
+                            <ul class="taken">
                                 <li>Assisteren van klanten</li>
                                 <li>Rekken aanvullen</li>
                                 <li>Producten beveiligen</li>
                                 <li>Kassa bedienen</li>
                             </ul>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <div>
                             <h5>VIP Computers BVBA</h5>
                             <p>Verkoopmedewerker en techniese dienst</p>
-                            <p>Periode: 10/07/2023 - 25/08/2023</p>
+                        </div>
+                        <div class="periode">
+                            <p>10/07/2023 - 25/08/2023</p>
+                        </div>
+                        <div>
                             <P>Taken:</P>
-                            <ul>
+                            <ul class="taken">
                                 <li>Rekken aanvullen</li>
                                 <li>Niewe laptops instelen.</li>
-                                <li>Problemen bij laptops, pc's en printers zoeken en oplossen</li>
+                                <li>It problemen bij toestellen zoeken en oplossen</li>
                             </ul>
                         </div>
-                    </li>
-                </ul>
-            </section>
+                    </div>
+                </div>
+            </fieldset>
         </article>
         <article id="hobby">
             <h3>Hobby's</h3>
