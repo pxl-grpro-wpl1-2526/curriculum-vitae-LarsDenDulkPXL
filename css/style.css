@@ -170,6 +170,38 @@ p {
 /* VAARDIGHEDEN + KENNISSEN */
 
 /* TALENKENNIS */
+#talenkennis fieldset {
+    display: none;
+}
+#talenkennis ul {
+    display: flex;
+    list-style-position: inside;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+#talenkennis ul li {
+    margin-bottom: 5px;
+    background-color: #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+#talenkennis ul li {
+    margin-bottom: 10px;
+}
+#talenkennis ul li:hover {
+    box-shadow: 0 0 5px #001540;
+}
+#talenkennis fieldset {
+    border: 3px solid #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+#talenkennis legend {
+    margin-left: 15px;
+    color: #001540;
+    font-weight: bold;
+}
 table{
     border: 2px solid black;
 }
@@ -287,3 +319,23 @@ footer a:hover {
     color: white;
 }
 /* FOOTER */
+
+@media screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+    }
+    header > div {
+        margin-left: 5px;
+    }
+    header fieldset {
+        width: 80%;
+    }
+
+
+    #talenkennis table {
+        display: none;
+    }
+    #talenkennis fieldset {
+        display: block  ;
+    }
+}
